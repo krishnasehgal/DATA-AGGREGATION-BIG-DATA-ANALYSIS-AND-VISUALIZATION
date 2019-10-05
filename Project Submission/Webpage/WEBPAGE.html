@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Word Cloud</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+     <style>
+        h1,h2,h3{
+            text-align: center;
+        }
+        .dropdown{
+            
+            text-align: center;
+        }
+    
+    </style>
+</head>
+<body>
+    <h1>Data Intensive Computing</h1>
+    <h2>Lab 2</h2>
+    <h2>Abhav Luthra</h2>
+    <h3>Word Count</h3>
+    <div style="text-align: center">
+    <select onchange="$('#imageToSwap').attr('src', this.options[this.selectedIndex].value);">Select
+        <option value="/Users/abhavluthra/Desktop/DIC/Lab2/Webpage/WC/nytw.png" selected>NYT</option>
+        <option value="/Users/abhavluthra/Desktop/DIC/Lab2/Webpage/WC/nyt_BuW.png">NYT Build Wall</option>
+        <option value="/Users/abhavluthra/Desktop/DIC/Lab2/Webpage/WC/nyt_BW.png">NYT Border Wall</option>
+        <option value="/Users/abhavluthra/Desktop/DIC/Lab2/Webpage/WC/nyt_I.png">NYT Immigrants</option>
+        <option value="/Users/abhavluthra/Desktop/DIC/Lab2/Webpage/WC/nyt_M.png">NYT Mexico Border</option>
+        <option value="/Users/abhavluthra/Desktop/DIC/Lab2/Webpage/WC/twitterw.png">Twitter</option>
+        <option value="/Users/abhavluthra/Desktop/DIC/Lab2/Webpage/WC/tw_BuW.png">TW Build Wall</option>
+        <option value="/Users/abhavluthra/Desktop/DIC/Lab2/Webpage/WC/tw_BW.png">TW Border Wall</option>
+        <option value="/Users/abhavluthra/Desktop/DIC/Lab2/Webpage/WC/tw_I.png">TW Immigrants</option>
+        <option value="/Users/abhavluthra/Desktop/DIC/Lab2/Webpage/WC/tw_MB.png">TW Mexico Border</option>
+        <option value="/Users/abhavluthra/Desktop/DIC/Lab2/Webpage/WC/tw_FW.png">TW Finish Wall</option>
+        <option value="/Users/abhavluthra/Desktop/DIC/Lab2/Webpage/WC/CC.png">CC</option>
+        <option value="/Users/abhavluthra/Desktop/DIC/Lab2/Webpage/WC/CC_BW.png">CC Border Wall</option>
+        <option value="/Users/abhavluthra/Desktop/DIC/Lab2/Webpage/WC/CC_I.png">CC Immigrants</option>
+
+    </select>
+    <br>
+    <br>
+    <img id="imageToSwap" class="profile" src="/Users/abhavluthra/Desktop/DIC/Lab2/Webpage/WC/nytw.png">
+    </div>
+    <br>
+    <br>
+
+    <h3>Word Co-ocurance</h3>
+    <div style="text-align: center">
+    <select onchange="$('#imageToSwapCO').attr('src', this.options[this.selectedIndex].value);">Select
+        <option value="/Users/abhavluthra/Desktop/DIC/Lab2/Webpage/WCo/NYT.png" selected>NYT</option>
+        <option value="/Users/abhavluthra/Desktop/DIC/Lab2/Webpage/WCo/NYT_BUW.png">NYT Build Wall</option>
+        <option value="/Users/abhavluthra/Desktop/DIC/Lab2/Webpage/WCo/NYT_BW.png">NYT Border Wall</option>
+        <option value="/Users/abhavluthra/Desktop/DIC/Lab2/Webpage/WCo/NYT_I.png">NYT Immigrants</option>
+        <option value="/Users/abhavluthra/Desktop/DIC/Lab2/Webpage/WCo/NYT_MB.png">NYT Mexico Border</option>
+        <option value="/Users/abhavluthra/Desktop/DIC/Lab2/Webpage/WCo/TW.png">Twitter</option>
+        <option value="/Users/abhavluthra/Desktop/DIC/Lab2/Webpage/WCo/TW_BUW.png">TW Build Wall</option>
+        <option value="/Users/abhavluthra/Desktop/DIC/Lab2/Webpage/WCo/TW_BW.png">TW Border Wall</option>
+        <option value="/Users/abhavluthra/Desktop/DIC/Lab2/Webpage/WCo/TW_I.png">TW Immigrants</option>
+        <option value="/Users/abhavluthra/Desktop/DIC/Lab2/Webpage/WCo/TW_MB.png">TW Mexico Border</option>
+        <option value="/Users/abhavluthra/Desktop/DIC/Lab2/Webpage/WCo/TW_FW.png">TW Finish Wall</option> 
+    </select>
+    <br>
+    <br>
+    <img id="imageToSwapCO" class="profile" src="/Users/abhavluthra/Desktop/DIC/Lab2/Webpage/WCo/NYT.png">
+    </div>
+
+</body>
+</html>
